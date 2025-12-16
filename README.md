@@ -1,74 +1,133 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+Todo List App with Pomodoro Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based Todo List application designed to help users organize tasks efficiently, with a Pomodoro Timer integration (currently in progress) to boost productivity.
+-More features in work
 
-## Available Scripts
+🚀 Project Overview
 
-In the project directory, you can run:
+This project was built as a hands-on learning and productivity tool using React.js. The goal was to create a clean, interactive, and deployable web application that:
 
-### `npm start`
+* Manages daily tasks
+* Supports task prioritization
+* Allows editing and deleting tasks
+* Uses visual indicators for priority
+* Is deployed live using **Netlify**
+* Is version-controlled using **Git & GitHub**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pomodoro functionality is being actively implemented to allow focused work sessions linked with tasks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Frontend: React.js, JavaScript, HTML, CSS
+* State Management: React Hooks (`useState`, `useEffect`)
+* Styling: Custom CSS (priority indicators, layout, icons)
+* Version Control: Git & GitHub
+* Deployment: Netlify
 
-### `npm run build`
+✨ Features Implemented
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ✅ Todo Management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Add new tasks
+* Edit existing tasks
+* Delete tasks
+* Scrollable task cards for long text
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🎯 Priority System
 
-### `npm run eject`
+Each task has a *priority level* shown using a *colored circular indicator*:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* 🔴 High Priority (Urgent)
+* 🟡 Medium Priority (Normal)
+* 🟢 Low Priority (Flexible)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🎨 UI/UX Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Rectangular task cards
+* Scrollable content inside task boxes
+* Edit (✏️) and Delete (❌) icons aligned on the right
+* Clean, minimal, user-friendly interface
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🌐 Deployment
 
-## Learn More
+* The app is deployed live on Netlify
+* Continuous deployment enabled via GitHub
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+⏳ Pomodoro Timer (In Progress)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The Pomodoro feature is currently under development and will include:
 
-### Analyzing the Bundle Size
+* 25-minute focus sessions
+* Short & long breaks
+* Linking Pomodoro sessions to selected tasks
+* Visual countdown timer
+* Session tracking per task
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> 🔧 Status: Implementation in progress
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📁 Project Structure
 
-### Advanced Configuration
+```
+todo-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── TodoInput.js
+│   │   ├── TodoList.js
+│   │   ├── TodoItem.js
+│   │   └── Pomodoro.js (in progress)
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+⚙️ How to Run Locally
 
-### Deployment
+```bash
+# clone the repository
+git clone https://github.com/your-username/Todo-list-with-pomodoro.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# go to project folder
+cd todo-app
 
-### `npm run build` fails to minify
+# install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Todo-list-with-pomodoro
->>>>>>> 1a3b9e36931efe28478c147d37d167ee0e16a779
+# start development server
+npm start
+```
+
+  Live Demo
+🔗 Deployed using Netlify
+  https://todolistpomodoro.netlify.app/
+
+## 📌 Future Enhancements
+
+* Complete Pomodoro integration
+* Task-wise Pomodoro statistics
+* Themes
+* Dark mode
+* Mobile responsiveness improvements
+* Interactive
+* Timer for each task with progress
+* Motivational Quotes
+
+---
+
+👩‍💻 Author
+
+**Shivalika Sudhas**
+Built as a learning + productivity project using React.js 🚀
+
+
+
+> If you find this project useful, feel free to ⭐ the repository!
+> heheh
+> Thankyouuuuu
