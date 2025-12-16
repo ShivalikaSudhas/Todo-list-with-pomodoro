@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
 
 function App() {
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState("all");
+
+  useEffect(() => {
+  const savedTodos = localStorage.getItem("todos");
+  if (savedTodos) {
+    setTodos(JSON.parse(savedTodos));
+  }
+}, []);
+useEffect(() => {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}, [todos]);
+
 
   // ADD TODO
   function addTodo(text, priority) {
