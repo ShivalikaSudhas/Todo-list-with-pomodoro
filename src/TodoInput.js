@@ -23,9 +23,9 @@ function TodoInput({ addTodo }) {
         value={priority}
         onChange={(e) => setPriority(e.target.value)}
       >
-        <option value="urgent">High</option>
-        <option value="okay">Medium</option>
-        <option value="time">Low</option>
+        <option value="urgent">High Priority Task</option>
+        <option value="okay">Medium Priority Task</option>
+        <option value="time">Low Priority Task</option>
       </select>
 
       <button onClick={handleAdd}>Add</button>
