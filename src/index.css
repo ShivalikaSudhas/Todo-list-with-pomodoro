@@ -1,13 +1,94 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
+  background-color: #c396db;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  background: rgb(215, 203, 227);
+  width: 560px;
+  margin: 90px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.filters button {
+  margin: 10px;
+}
+
+input, select {
+  padding: 10px;
+  margin-right: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+}
+
+
+.todo-card {
+  display: flex;
+  align-items: center;
+  background: #b981e1;
+  border: 2px solid #6c15b4;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  height: 10px;
+}
+
+.priority-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.todo-content {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  gap: 8px;
+}
+
+.todo-text {
+  max-height: 40px;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.edit-input {
+  width: 100%;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
